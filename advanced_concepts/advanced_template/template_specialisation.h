@@ -46,7 +46,7 @@ public:
 // Spécialisation complète pour un bool
 template <>
 class Stockage<bool> {
-    uint8_t m_val : 1;
+    unsigned char m_val : 1;
     public:
     explicit Stockage(const bool val) : m_val(val ? 1 : 0) {}
     void afficher() const {
@@ -58,6 +58,7 @@ class Stockage<bool> {
 
 /**
  * Spécialisation partielle
+ * on a un modele general, et puis des modeles spécialisés pour des familles de type
  */
 template <class T>
 class Info {
@@ -66,7 +67,7 @@ class Info {
     }
 };
 
-
+// Modèle pour les pointeurs
 template <typename T>
 class Info<T*> {
 public:

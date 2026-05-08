@@ -1,12 +1,9 @@
-cmake_minimum_required(VERSION 4.2)
+cmake_minimum_required(VERSION 3.28)
 project(tuto_cpp)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_COMPILER clang++)
-
-set(CMAKE_CXX_COMPILER clang++)
 
 add_executable(tuto_cpp main.cpp
         src/personnage.cpp
@@ -30,15 +27,15 @@ add_executable(tuto_cpp main.cpp
         headers/explicit_key_word_use.h
         headers/value_type_use.h
         headers/linked_list.h
-        headers/noexecept_key_word_use.h
+        headers/no_execept_key_word_use.h
         headers/future_promesses_use.h
-        headers/stringview_use.h
+        headers/string_view_use.h
         headers/singleton_pattern_use.h
         headers/template_variadique_use.h
-        advanced_concepts/advenced_fundamentals/memory_alignment.h
-        advanced_concepts/advenced_fundamentals/value_category.h
-        advanced_concepts/advenced_fundamentals/rule_of_zero_three_five.h
-        advanced_concepts/advenced_fundamentals/advanced_consts.h
+        advanced_concepts/advanced_fundamentals/memory_alignment.h
+        advanced_concepts/advanced_fundamentals/value_category.h
+        advanced_concepts/advanced_fundamentals/rule_of_zero_three_five.h
+        advanced_concepts/advanced_fundamentals/advanced_consts.h
         advanced_concepts/advanced_template/templates.h
         advanced_concepts/advanced_template/template_specialisation.h
         advanced_concepts/advanced_template/sfinae.h

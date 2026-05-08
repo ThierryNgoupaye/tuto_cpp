@@ -6,6 +6,7 @@
 
 
 
+#include "advanced_concepts/advanced_template/metaprogramming.h"
 #include "advanced_concepts/advanced_template/template_specialisation.h"
 #include "headers/template_variadique_use.h"
 
@@ -33,19 +34,15 @@ extern int add(const int& a, const int& b);
 extern float nb_virgule;
 
 
-
-
-
 // argc = nombre de parametres passés au programme à son éxécution
 // argv, listes des parametres passés en argument au programme
 int main(const int argc, char* argv[]) {
 
 
+    
 
 
 
 
     exit(0);
-
-
 }

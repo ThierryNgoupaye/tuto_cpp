@@ -7,14 +7,14 @@
 
 #include <deque>
 #include <iostream>
-#include <type_traits>
+#include <vector>
 
 
 /**
  * Non-Type Template Parameters.
  * Il s'agit ici de pouvoir passer une valeur comme paramètre template
  * Les types autorisés sont les types numériques et les pointeurs.
- */
+*/
 
 template<typename T, int N>
 class Tableau {
@@ -101,7 +101,7 @@ using NthType = std::tuple_element_t<N, std::tuple<Args...>>;
 
 // Fold expression
 template<class... Args>
-auto somme(Args ... args) {
+auto somme(Args... args) {
     return (args + ...);
 }
 

@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include <numeric>
 #include <type_traits>
 #include <vector>
 
@@ -123,22 +124,27 @@ inline void process() {
 
 
 // PGCD compile-time (Plus Grand Commun Diviseur)
-template<int A, int B>
+template<unsigned int A, unsigned int B>
 struct PGCD {
-    static constexpr int value = PGCD<B, A % B>::value;
+    static constexpr unsigned int value = A <= B ?  PGCD<A, B % A>::value : PGCD<B, A % B>::value;
 };
 
-template<int A>
+template<unsigned int A>
 struct PGCD<A, 0> {
     static constexpr int value = A;
 };
 
 
+template<int A, int B>
+int compute_pgcd_compile_timne() {
+    return PGCD<A,B>::value;
+}
+
 
 
 // Choisir le type de stockage selon la taille
 template<std::size_t N>
-using StorageType = std::conditional_t<N <= 8, unsigned char, std::conditional_t<N <= 16,short unsigned int,  unsigned int >>;
+using StorageType =  std::conditional_t<N <= 2, unsigned char, std::conditional_t<N <= 4,short unsigned int,  unsigned int >>;
 
 
 // Utilisation pratique — choisir int ou double
