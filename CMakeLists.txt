@@ -51,4 +51,8 @@ add_executable(tuto_cpp main.cpp
         advanced_concepts/concurrency_parallelism/atomic_op.h
         advanced_concepts/concurrency_parallelism/asynchrone.h
         advanced_concepts/concurrency_parallelism/coroutines.h
-        advanced_concepts/concurrency_parallelism/condition_variables.h)
+        advanced_concepts/concurrency_parallelism/condition_variables.h
+        advanced_concepts/design_pattern_architectures/pattern_creationnels.h
+        advanced_concepts/design_pattern_architectures/structural_patterns.h
+        advanced_concepts/design_pattern_architectures/behavior_pattern.h
+        advanced_concepts/design_pattern_architectures/cpp_pattern.h)

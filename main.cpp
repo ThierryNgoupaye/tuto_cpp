@@ -15,6 +15,9 @@
 #include "advanced_concepts/concurrency_parallelism/condition_variables.h"
 #include "advanced_concepts/concurrency_parallelism/coroutines.h"
 #include "advanced_concepts/concurrency_parallelism/mutex_concepts.h"
+#include "advanced_concepts/design_pattern_architectures/behavior_pattern.h"
+#include "advanced_concepts/design_pattern_architectures/cpp_pattern.h"
+#include "advanced_concepts/design_pattern_architectures/pattern_creationnels.h"
 
 #include "headers/template_variadique_use.h"
 
@@ -42,7 +45,7 @@ extern float nb_virgule;
 int main(const int argc, char* argv[]) {
 
 
-    traiter_file_taches();
+    pimpl_pattern_use();
 
 
 
