@@ -6,8 +6,16 @@
 
 
 
+
+
 #include "advanced_concepts/advanced_template/metaprogramming.h"
 #include "advanced_concepts/advanced_template/template_specialisation.h"
+#include "advanced_concepts/concurrency_parallelism/asynchrone.h"
+#include "advanced_concepts/concurrency_parallelism/atomic_op.h"
+#include "advanced_concepts/concurrency_parallelism/condition_variables.h"
+#include "advanced_concepts/concurrency_parallelism/coroutines.h"
+#include "advanced_concepts/concurrency_parallelism/mutex_concepts.h"
+
 #include "headers/template_variadique_use.h"
 
 
@@ -23,11 +31,6 @@ using std::vector;
 using std::array;
 
 
-template <typename T>
-void print(const T& t ) {
-    std::cout << t << std::endl;
-}
-
 // utilisation de fonctions définies dans des fichiers d'en tete
 // de maniere indépendante (voir fichier Inline.cpp)
 extern int add(const int& a, const int& b);
@@ -39,7 +42,7 @@ extern float nb_virgule;
 int main(const int argc, char* argv[]) {
 
 
-    
+    traiter_file_taches();
 
 
 

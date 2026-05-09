@@ -45,4 +45,10 @@ add_executable(tuto_cpp main.cpp
         advanced_concepts/advanced_stl/iterators.h
         advanced_concepts/advanced_stl/stl_algorithms.h
         advanced_concepts/advanced_stl/ranges.h
-        advanced_concepts/advanced_stl/utilitaires_stl.h)
+        advanced_concepts/advanced_stl/utilitaires_stl.h
+        advanced_concepts/concurrency_parallelism/threads_concepts.h
+        advanced_concepts/concurrency_parallelism/mutex_concepts.h
+        advanced_concepts/concurrency_parallelism/atomic_op.h
+        advanced_concepts/concurrency_parallelism/asynchrone.h
+        advanced_concepts/concurrency_parallelism/coroutines.h
+        advanced_concepts/concurrency_parallelism/condition_variables.h)

@@ -269,68 +269,68 @@ class TableauStatique {
 public:
     // Définir l'itérateur comme classe interne
     class Iterator {
-    public:
-        // Tags obligatoires pour les iterator_traits !
-        using iterator_category = std::random_access_iterator_tag;
-        using value_type        = T;
-        using difference_type   = std::ptrdiff_t;
-        using pointer           = T*;
-        using reference         = T&;
+        public:
+            // Tags obligatoires pour les iterator_traits !
+            using iterator_category = std::random_access_iterator_tag;
+            using value_type        = T;
+            using difference_type   = std::ptrdiff_t;
+            using pointer           = T*;
+            using reference         = T&;
 
-        // Constructeur
-        explicit Iterator(T* ptr) : m_ptr(ptr) {}
+            // Constructeur
+            explicit Iterator(T* ptr) : m_ptr(ptr) {}
 
-        // Déréférencement
-        T& operator*()  { return *m_ptr; }
-        T* operator->() { return m_ptr;  }
+            // Déréférencement
+            T& operator*()  { return *m_ptr; }
+            T* operator->() { return m_ptr;  }
 
-        // Avance
-        Iterator& operator++() { ++m_ptr; return *this; }
-        Iterator  operator++(int) {
-            Iterator tmp = *this;
-            ++m_ptr;
-            return tmp;
-        }
+            // Avance
+            Iterator& operator++() { ++m_ptr; return *this; }
+            Iterator  operator++(int) {
+                Iterator tmp = *this;
+                ++m_ptr;
+                return tmp;
+            }
 
-        // Recul
-        Iterator& operator--() { --m_ptr; return *this; }
-        Iterator  operator--(int) {
-            Iterator tmp = *this;
-            --m_ptr;
-            return tmp;
-        }
+            // Recul
+            Iterator& operator--() { --m_ptr; return *this; }
+            Iterator  operator--(int) {
+                Iterator tmp = *this;
+                --m_ptr;
+                return tmp;
+            }
 
-        Iterator operator+=(difference_type n) { m_ptr += n; return *this; }
-        Iterator operator-=(difference_type n) { m_ptr -= n; return *this; }
+            Iterator operator+=(difference_type n) { m_ptr += n; return *this; }
+            Iterator operator-=(difference_type n) { m_ptr -= n; return *this; }
 
-        // Arithmétique
-        Iterator operator+(difference_type n) const {
-            return Iterator(m_ptr + n);
-        }
-        Iterator operator-(difference_type n) const {
-            return Iterator(m_ptr - n);
-        }
-        difference_type operator-(const Iterator& other) const {
-            return m_ptr - other.m_ptr;
-        }
+            // Arithmétique
+            Iterator operator+(difference_type n) const {
+                return Iterator(m_ptr + n);
+            }
+            Iterator operator-(difference_type n) const {
+                return Iterator(m_ptr - n);
+            }
+            difference_type operator-(const Iterator& other) const {
+                return m_ptr - other.m_ptr;
+            }
 
-        // Accès indexé
-        T& operator[](difference_type n) { return m_ptr[n]; }
+            // Accès indexé
+            T& operator[](difference_type n) { return m_ptr[n]; }
 
-        // Comparaison
-        bool operator==(const Iterator& other) const {
-            return m_ptr == other.m_ptr;
-        }
-        bool operator!=(const Iterator& other) const {
-            return m_ptr != other.m_ptr;
-        }
-        bool operator<(const Iterator& other) const {
-            return m_ptr < other.m_ptr;
-        }
+            // Comparaison
+            bool operator==(const Iterator& other) const {
+                return m_ptr == other.m_ptr;
+            }
+            bool operator!=(const Iterator& other) const {
+                return m_ptr != other.m_ptr;
+            }
+            bool operator<(const Iterator& other) const {
+                return m_ptr < other.m_ptr;
+            }
 
-    private:
-        T* m_ptr;
-    };
+        private:
+            T* m_ptr;
+        };
 
 
     TableauStatique() : m_data{} {}
