@@ -55,4 +55,8 @@ add_executable(tuto_cpp main.cpp
         advanced_concepts/design_pattern_architectures/pattern_creationnels.h
         advanced_concepts/design_pattern_architectures/structural_patterns.h
         advanced_concepts/design_pattern_architectures/behavior_pattern.h
-        advanced_concepts/design_pattern_architectures/cpp_pattern.h)
+        advanced_concepts/design_pattern_architectures/cpp_pattern.h
+        advanced_concepts/optimization/advanced_preprocessing.h
+        advanced_concepts/optimization/optimization.h
+        advanced_concepts/optimization/compilateur.h
+        advanced_concepts/optimization/low_level.h)

@@ -18,6 +18,9 @@
 #include "advanced_concepts/design_pattern_architectures/behavior_pattern.h"
 #include "advanced_concepts/design_pattern_architectures/cpp_pattern.h"
 #include "advanced_concepts/design_pattern_architectures/pattern_creationnels.h"
+#include "advanced_concepts/optimization/advanced_preprocessing.h"
+#include "advanced_concepts/optimization/low_level.h"
+#include "advanced_concepts/optimization/optimization.h"
 
 #include "headers/template_variadique_use.h"
 
@@ -45,8 +48,20 @@ extern float nb_virgule;
 int main(const int argc, char* argv[]) {
 
 
-    pimpl_pattern_use();
+    uint32_t nombre = 0x12345678;
+    
 
+    // Obtenir un pointeur vers les octets bruts
+    const auto* octets = reinterpret_cast<uint8_t*>(&nombre);
+
+    std::cout << "Nombre : 0x12345678" << std::endl;
+    std::cout << "Octets en mémoire :" << std::endl;
+
+    for (int i = 0; i < 4; i++) {
+        std::cout << "  adresse[" << i << "] = 0x"
+                  << std::hex << static_cast<int>(octets[i])
+                  << std::endl;
+    }
 
 
 
