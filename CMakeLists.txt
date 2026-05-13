@@ -59,4 +59,7 @@ add_executable(tuto_cpp main.cpp
         advanced_concepts/optimization/advanced_preprocessing.h
         advanced_concepts/optimization/optimization.h
         advanced_concepts/optimization/compilateur.h
-        advanced_concepts/optimization/low_level.h)
+        advanced_concepts/optimization/low_level.h
+        advanced_concepts/modern_cpp/cpp_17.h
+        advanced_concepts/modern_cpp/cpp_20.h
+        advanced_concepts/modern_cpp/cpp_23.h)

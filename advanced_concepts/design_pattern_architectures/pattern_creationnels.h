@@ -364,7 +364,6 @@ inline void designed_initialized_use() {
         .fullscreen = true,
         .theme = "dark",
     };
-
     std::cout << config.titre << std::endl;
 }
 
