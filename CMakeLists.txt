@@ -1,9 +1,41 @@
 cmake_minimum_required(VERSION 3.28)
+
+set(CMAKE_C_COMPILER   gcc-14)
+set(CMAKE_CXX_COMPILER g++-14)
+
 project(tuto_cpp)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+
+
+### Inclusion des tests
+include(FetchContent)
+
+FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG       v1.14.0
+)
+
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+
+# Librairie contenant notre code à tester
+add_library(mon_code STATIC
+    advanced_concepts/compilation/test_ex/src/Camera.cpp
+    advanced_concepts/compilation/test_ex/src/Calculatrice.cpp
+)
+
+# Headers de la libraire
+target_include_directories(mon_code PUBLIC advanced_concepts/compilation/test_ex/headers)
+
+
+
+add_subdirectory(tests)
+
 
 add_executable(tuto_cpp main.cpp
         src/personnage.cpp
@@ -62,4 +94,40 @@ add_executable(tuto_cpp main.cpp
         advanced_concepts/optimization/low_level.h
         advanced_concepts/modern_cpp/cpp_17.h
         advanced_concepts/modern_cpp/cpp_20.h
-        advanced_concepts/modern_cpp/cpp_23.h)
+        advanced_concepts/modern_cpp/cpp_23.h
+        advanced_concepts/compilation/profiling.h
+)
+
+
+target_link_libraries(tuto_cpp PUBLIC mon_code)
+
+
+find_program(VALGRIND valgrind)
+
+if(VALGRIND)
+    add_custom_target(valgrind
+    COMMAND ${VALGRIND}
+            --leak-check=full
+            --show-leak-kinds=all
+            --track-origins=yes
+            --error-exitcode=1
+            $<TARGET_FILE:tuto_cpp>
+            DEPENDS tuto_cpp
+            COMMENT "Analyse Valgrind en cours ..."
+    )
+    message(STATUS "Analyse Valgrind en cours ...")
+else()
+    message(WARNING "Valgrind non trouvé !")
+endif()
+
+
+
+target_compile_options(tuto_cpp PRIVATE
+        $<$<CONFIG:Debug>:-g -O0>
+        $<$<CONFIG:RelWithDebInfo>:-O2 -g -fno-omit-frame-pointer>
+)
+
+
+
+# Activation des tests avec ctest
+enable_testing()

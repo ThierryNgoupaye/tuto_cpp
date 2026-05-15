@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -fmodules-ts -fmodule-mapper=CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Camera.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Camera.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/src/Camera.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/src/Camera.cpp",
+  "output": "CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Camera.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -fmodules-ts -fmodule-mapper=CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Calculatrice.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Calculatrice.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/src/Calculatrice.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/src/Calculatrice.cpp",
+  "output": "CMakeFiles/mon_code.dir/advanced_concepts/compilation/test_ex/src/Calculatrice.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -g -O0 -fmodules-ts -fmodule-mapper=CMakeFiles/tuto_cpp.dir/main.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/tuto_cpp.dir/main.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/main.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/main.cpp",
+  "output": "CMakeFiles/tuto_cpp.dir/main.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -g -O0 -fmodules-ts -fmodule-mapper=CMakeFiles/tuto_cpp.dir/src/personnage.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/tuto_cpp.dir/src/personnage.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/src/personnage.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/src/personnage.cpp",
+  "output": "CMakeFiles/tuto_cpp.dir/src/personnage.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -g -O0 -fmodules-ts -fmodule-mapper=CMakeFiles/tuto_cpp.dir/src/_inline_use.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/tuto_cpp.dir/src/_inline_use.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/src/_inline_use.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/src/_inline_use.cpp",
+  "output": "CMakeFiles/tuto_cpp.dir/src/_inline_use.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -g -std=c++23 -g -O0 -fmodules-ts -fmodule-mapper=CMakeFiles/tuto_cpp.dir/src/Iterator.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/tuto_cpp.dir/src/Iterator.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/src/Iterator.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/src/Iterator.cpp",
+  "output": "CMakeFiles/tuto_cpp.dir/src/Iterator.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/include -I/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -I/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -fmodules-ts -fmodule-mapper=tests/CMakeFiles/mes_tests.dir/test_calculatrice.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o tests/CMakeFiles/mes_tests.dir/test_calculatrice.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/tests/test_calculatrice.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/tests/test_calculatrice.cpp",
+  "output": "tests/CMakeFiles/mes_tests.dir/test_calculatrice.cpp.o"
+},
+{
+  "directory": "/home/thierry/projets/polytech-dijon/tuto_cpp/build",
+  "command": "/usr/bin/g++-14 -I/home/thierry/projets/polytech-dijon/tuto_cpp/advanced_concepts/compilation/test_ex/headers -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest/include -isystem /home/thierry/projets/polytech-dijon/tuto_cpp/build/_deps/googletest-src/googletest -g -std=c++23 -fmodules-ts -fmodule-mapper=tests/CMakeFiles/mes_tests.dir/test_camera.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o tests/CMakeFiles/mes_tests.dir/test_camera.cpp.o -c /home/thierry/projets/polytech-dijon/tuto_cpp/tests/test_camera.cpp",
+  "file": "/home/thierry/projets/polytech-dijon/tuto_cpp/tests/test_camera.cpp",
+  "output": "tests/CMakeFiles/mes_tests.dir/test_camera.cpp.o"
+}
+]

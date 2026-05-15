@@ -4,12 +4,12 @@
 #include <iostream>
 #include <chrono>
 
-
-
-
+#include "Calculatrice.h"
+#include "Camera.h"
 
 #include "advanced_concepts/advanced_template/metaprogramming.h"
 #include "advanced_concepts/advanced_template/template_specialisation.h"
+#include "advanced_concepts/compilation/profiling.h"
 #include "advanced_concepts/concurrency_parallelism/asynchrone.h"
 #include "advanced_concepts/concurrency_parallelism/atomic_op.h"
 #include "advanced_concepts/concurrency_parallelism/condition_variables.h"
@@ -33,7 +33,7 @@
 // Macro fonction
 #define MIN(x,y) ((x) > (y) ? (y) : (x))
 
-using string = std::string;
+using std::string;
 using std::array;
 using std::vector;
 using std::array;
@@ -49,7 +49,8 @@ extern float nb_virgule;
 // argv, listes des parametres passés en argument au programme
 int main(const int argc, char* argv[]) {
 
-    ranges_to_use();
+
+    profiling_with_cache_miss();
 
     exit(0);
 }
