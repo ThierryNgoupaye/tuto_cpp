@@ -1,9 +1,0 @@
-{
-    "cmake.generator": "Ninja",
-    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
-    "cmake.configureSettings": {
-        "CMAKE_CXX_COMPILER": "/usr/bin/g++-14",
-        "CMAKE_C_COMPILER": "/usr/bin/gcc-14",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-    }
-}
